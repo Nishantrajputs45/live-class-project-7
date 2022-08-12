@@ -1,0 +1,38 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 2.5rem;
+}
+.nav-items {
+  display: flex;
+  width: 30rem;
+  justify-content: space-between;
+  position: relative;
+  left: 2rem;
+}
+.nav-item {
+  font-weight: 400;
+}
+.active-item {
+  font-weight: bold;
+  color: #fe5e35;
+}
+.logo {
+  width: 5rem;
+  height: 5rem;
+  background: transparent;
+  position: relative;
+  bottom: 2.2rem;
+  left: 3rem;
+}
+.actions {
+  width: 8rem;
+  height: 8rem;
+  position: relative;
+  right: 1rem;
+  bottom: 3.2rem;
+}
