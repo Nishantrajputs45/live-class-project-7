@@ -2,90 +2,154 @@
   padding: 0;
   margin: 0;
 }
-nav {
+body {
+  display: flex;
+  flex-direction: column;
+}
+.nav-bar {
+  width: 90vw;
   display: flex;
   justify-content: space-between;
-  padding-top: 2.5rem;
+  align-self: center;
+  padding: 2rem;
+}
+.logo {
+  width: 6rem;
+  height: 6rem;
 }
 .nav-items {
   display: flex;
-  width: 30rem;
+  width: 30vw;
   justify-content: space-between;
+  color: #758283;
+  position: relative;
+  left: 4rem;
+  top: 2rem;
+}
+
+.nav-item {
+  font-weight: 600;
+  font-size: 18px;
+}
+.actions {
+  width: 15rem;
   position: relative;
   left: 2rem;
 }
-.nav-item {
-  font-weight: 400;
-}
 .active-item {
-  font-weight: bold;
   color: #fe5e35;
 }
-.logo {
-  width: 5rem;
-  height: 5rem;
-  background: transparent;
-  position: relative;
-  bottom: 2.2rem;
-  left: 3rem;
+.intro-section {
+  display: flex;
+  width: 90vw;
+  align-self: center;
 }
-.actions {
-  width: 8rem;
-  height: 8rem;
+
+.left-section {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  justify-content: space-around;
+}
+
+.left-section h3 {
+  display: flex;
+  justify-content: space-between;
+  width: 12vw;
+  font-size: 25px;
+}
+.left-section h3 img {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+.left-section h1 {
+  font-size: 60px;
+}
+.sub-headlines {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 30vw;
+  height: 20vh;
+}
+.sub-headline {
+  display: flex;
+  width: 15rem;
+  align-self: center;
+}
+.sub-headline img {
+  border-radius: 50%;
+  background-color: #fe5e35;
+  padding: 0.2rem;
+  width: 1rem;
+  height: 1rem;
   position: relative;
   right: 1rem;
-  bottom: 3.2rem;
+  bottom: 0.2rem;
 }
-.intro-section {
+.text {
+  color: #758283;
+  width: 40rem;
+}
+.action-btns {
+  width: 16rem;
   display: flex;
   justify-content: space-between;
 }
 .right-section {
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
-  width: 50vw;
-  justify-content: space-evenly;
+  width: 35vw;
   height: 70vh;
 }
-
+.headphone-div {
+  display: flex;
+  height: 50vh;
+}
 .discount {
-  width: 8rem;
-  height: 8rem;
-  position: relative;
-  left: 8.5rem;
-  top: 8rem;
+  width: 7rem;
+  height: 7rem;
   z-index: -1;
+  order: -2;
+  align-self: center;
+  position: relative;
+  left: 4.5rem;
+  top: 5rem;
 }
 .discount-content {
+  order: -2;
+  color: #ffffff;
+  align-self: center;
   position: relative;
-  color: #ffffffff;
-  width: 4rem;
-  left: 10.5rem;
-  top: 2.5rem;
+  top: 5rem;
+  right: 1rem;
 }
 .headphone {
-  width: 18rem;
-  height: 18rem;
-  position: absolute;
-  bottom: 14rem;
-  right: 18rem;
+  width: 20rem;
+  height: 20rem;
   z-index: -2;
+  order: -1;
+  align-self: center;
+  position: relative;
+  right: 4rem;
 }
 .dots {
   display: flex;
-  width: 6rem;
+  align-self: center;
+  width: 7rem;
   justify-content: space-between;
 }
 .dot {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
-  position: relative;
-  left: 18rem;
-  top: 4.5rem;
+  background-color: #758283;
 }
 .yellow-dot {
-  background-color: #ffff00;
+  background-color: #fbd104;
 }
 .tomato-dot {
   background-color: #fe5e35;
@@ -94,77 +158,13 @@ nav {
   background-color: #000000;
 }
 .action-btn {
-  width: 8rem;
-  position: relative;
-  top: 3rem;
-  left: 2rem;
-  border: none;
-  border-radius: 2rem;
+  width: 7rem;
   padding: 0.5rem 0;
-  color: #ffffffff;
+  border-radius: 5rem;
+  border: none;
   background: #fe5e35;
+  color: #ffffff;
 }
 .chartAdder {
-  left: 17rem;
-}
-.left-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  position: relative;
-  bottom: 2rem;
-  left: 1rem;
-}
-.left-section h3 {
-  width: 10rem;
-  display: flex;
-  position: relative;
-  left: 2rem;
-  bottom: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-}
-.left-section h3 img {
-  width: 2rem;
-  height: 2rem;
-  position: relative;
-  bottom: 0.5rem;
-}
-
-.left-section h1 {
-  font-size: 4rem;
-  font-weight: 800;
-  position: relative;
-  left: 2rem;
-  bottom: 1rem;
-}
-.sub-headlines {
-  position: relative;
-  left: 8rem;
-  height: 5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.text {
-  position: relative;
-  width: 40rem;
-  color: #808080;
-  left: 2rem;
-  top: 2rem;
-}
-.action-btns {
-  position: relative;
-  width: 18rem;
-  display: flex;
-  justify-content: space-between;
-}
-.sub-headline img {
-  border-radius: 50%;
-  background: #fe5e35;
-  width: 1rem;
-  height: 1rem;
-  position: relative;
-  top: 0.2rem;
-  right: 0.3rem;
+  align-self: center;
 }
