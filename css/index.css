@@ -52,21 +52,22 @@ nav {
   width: 8rem;
   height: 8rem;
   position: relative;
-  right: 7rem;
-  top: 3rem;
+  left: 8.5rem;
+  top: 8rem;
   z-index: -1;
 }
 .discount-content {
   position: relative;
-  bottom: 3rem;
-  right: 5rem;
   color: #ffffffff;
+  width: 4rem;
+  left: 10.5rem;
+  top: 2.5rem;
 }
 .headphone {
   width: 18rem;
   height: 18rem;
   position: absolute;
-  bottom: 19rem;
+  bottom: 14rem;
   right: 18rem;
   z-index: -2;
 }
@@ -80,8 +81,8 @@ nav {
   height: 1rem;
   border-radius: 50%;
   position: relative;
-  bottom: 2rem;
-  left: 3rem;
+  left: 18rem;
+  top: 4.5rem;
 }
 .yellow-dot {
   background-color: #ffff00;
@@ -95,11 +96,75 @@ nav {
 .action-btn {
   width: 8rem;
   position: relative;
+  top: 3rem;
   left: 2rem;
-  bottom: 2rem;
   border: none;
   border-radius: 2rem;
   padding: 0.5rem 0;
   color: #ffffffff;
   background: #fe5e35;
+}
+.chartAdder {
+  left: 17rem;
+}
+.left-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  position: relative;
+  bottom: 2rem;
+  left: 1rem;
+}
+.left-section h3 {
+  width: 10rem;
+  display: flex;
+  position: relative;
+  left: 2rem;
+  bottom: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.left-section h3 img {
+  width: 2rem;
+  height: 2rem;
+  position: relative;
+  bottom: 0.5rem;
+}
+
+.left-section h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  position: relative;
+  left: 2rem;
+  bottom: 1rem;
+}
+.sub-headlines {
+  position: relative;
+  left: 8rem;
+  height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.text {
+  position: relative;
+  width: 40rem;
+  color: #808080;
+  left: 2rem;
+  top: 2rem;
+}
+.action-btns {
+  position: relative;
+  width: 18rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-headline img {
+  border-radius: 50%;
+  background: #fe5e35;
+  width: 1rem;
+  height: 1rem;
+  position: relative;
+  top: 0.2rem;
+  right: 0.3rem;
 }
