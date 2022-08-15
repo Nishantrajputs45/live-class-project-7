@@ -24,8 +24,8 @@ body {
   justify-content: space-between;
   color: #758283;
   position: relative;
-  left: 4rem;
-  top: 2rem;
+  margin-left: 4rem;
+  margin-top: 2rem;
 }
 
 .nav-item {
@@ -35,7 +35,7 @@ body {
 .actions {
   width: 15rem;
   position: relative;
-  left: 2rem;
+  margin-left: 2rem;
 }
 .active-item {
   color: #fe5e35;
@@ -177,14 +177,89 @@ body {
   align-self: center;
 }
 
-@media (max-width: 480px) {
-  body {
-    background-color: red;
+@media (min-width: 481px) and (max-width: 765px) {
+  .nav-bar {
+    padding-top: 1rem;
   }
-}
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+  .nav-items {
+    width: 40vw;
+    margin-left: 6rem;
+    margin-top: 1.4rem;
+  }
 
-@media (min-width: 481px) and (max-width: 767px) {
-  body {
-    background-color: yellow;
+  .nav-item {
+    font-size: 15px;
+  }
+  .actions {
+    width: 9rem;
+    margin-left: 5rem;
+  }
+
+  .left-section {
+    height: 82vh;
+  }
+
+  .left-section h3 {
+    width: 9rem;
+    font-size: 20px;
+    font-weight: 100;
+  }
+  .left-section h3 img {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .left-section h1 {
+    font-size: 35px;
+  }
+  .sub-headlines {
+    width: 40vw;
+  }
+  .sub-headline {
+    width: 28vw;
+    font-size: 12px;
+  }
+  .sub-headline img {
+    padding: 0.2rem;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 1rem;
+  }
+  .text {
+    color: #758283;
+    width: 100%;
+    font-size: 12px;
+  }
+  .right-section {
+    width: 47%;
+    height: 75vh;
+  }
+  .headphone-div {
+    align-self: flex-start;
+    height: 50vh;
+  }
+  .discount {
+    width: 5rem;
+    height: 5rem;
+    bottom: 4rem;
+  }
+  .discount-content {
+    right: 4rem;
+    bottom: 5rem;
+    font-size: 12px;
+  }
+  .headphone {
+    width: 13rem;
+    height: 13rem;
+    align-self: center;
+    right: 7rem;
+  }
+  .dot-btn {
+    justify-content: space-between;
+    height: 6rem;
+    width: 36vw;
   }
 }
